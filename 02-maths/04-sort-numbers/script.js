@@ -6,7 +6,14 @@
 
     document.getElementById("run").addEventListener("click", () => {
 
-        // your code here
+        let myNumbers = document.getElementById("numbers").value;
+        console.log(myNumbers);
+
+        let trier = myNumbers.split(",").sort((a, b) => a - b);
+        console.log(trier);
+
+        document.getElementById("numbers").value = trier;
+
 
     });
 
