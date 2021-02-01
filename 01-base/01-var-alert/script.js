@@ -2,5 +2,4 @@
 
 
 let myVar = "Hello Worl !";
-
 window.alert(myVar);
