@@ -3,8 +3,7 @@
 
 (() => {
 
-    let people = [
-        {
+    let people = [{
             firstname: "Grenville",
             lastname: "Stive",
             age: 64,
@@ -82,5 +81,22 @@
     ];
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => MyArray());
+    const reducer = (accumulator, currentValue)
+
+    function MyArray() {
+        function MyArray() {
+            let sum = 0;
+            people.forEach(element => {
+                console.log(element.age);
+                sum += element.age;
+
+            });
+            console.log("somme : " + sum);
+
+        }
+    }
+
 
 })();
