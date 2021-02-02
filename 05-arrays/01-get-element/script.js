@@ -18,5 +18,11 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => MyArray(fruits));
 
+    function MyArray() {
+
+
+        console.log(fruits[4]);
+    }
 })();
