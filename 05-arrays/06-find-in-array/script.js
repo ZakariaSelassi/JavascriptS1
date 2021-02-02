@@ -2,8 +2,7 @@
 
 (() => {
 
-    let people = [
-        {
+    let people = [{
             firstname: "Bradford",
             lastname: "Coldbath",
             email: "bcoldbath0@wired.com",
@@ -81,5 +80,14 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => MyArray());
 
+    function MyArray() {
+        people.find(element => {
+            if (element.lastname === "Dupont" && element.firstname === "Jean") {
+                console.log(element.email);
+            }
+        });
+
+    }
 })();
