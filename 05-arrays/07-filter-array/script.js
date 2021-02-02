@@ -2,8 +2,7 @@
 
 (() => {
 
-    const people = [
-        {
+    const people = [{
             firstname: "Dreddy",
             lastname: "Nussgen",
             age: 70,
@@ -81,5 +80,16 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => MyArray());
+
+    function MyArray() {
+        let myCopy = [...people];
+
+        myCopy.filter(element => {
+            if (element.age > 18) {
+                console.log(element.firstname);
+            }
+        });
+    }
 
 })();
