@@ -16,4 +16,18 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => MyArray());
+
+
+    function MyArray() {
+
+        let mySet = new Set();
+        mySet = fruits;
+        mySet.delete("apple");
+        mySet.delete("cherry");
+        mySet.add("Banana").add("Kiwi");
+        console.log(mySet);
+
+    }
+
 })();
