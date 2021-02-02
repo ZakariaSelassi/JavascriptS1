@@ -83,7 +83,6 @@
     // your code here
 
     document.getElementById("run").addEventListener("click", () => MyArray());
-    const reducer = (accumulator, currentValue)
 
     function MyArray() {
         function MyArray() {

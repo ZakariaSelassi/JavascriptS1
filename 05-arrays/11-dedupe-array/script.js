@@ -21,5 +21,21 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => MyArray());
 
+
+
+    function MyArray() {
+        /*first methode */
+        //let cleanArray = [...new Set(fruits)];
+        //console.log(cleanArray);
+        /* seconde methode */
+        let clean = [];
+        fruits.forEach(element => {
+            if (!clean.includes(element)) {
+                clean.push(element);
+            }
+        })
+        console.log(clean);
+    }
 })();
