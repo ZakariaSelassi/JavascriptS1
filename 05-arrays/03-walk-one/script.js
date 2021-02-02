@@ -20,4 +20,9 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", () => MyArray(fruits));
+
+    function MyArray() {
+        fruits.forEach(e => console.log(e));
+    }
 })();
