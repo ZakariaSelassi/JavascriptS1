@@ -18,5 +18,15 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => MyArray());
 
+    function MyArray() {
+
+        let n = fruits.includes("apple");
+        if (n === true) {
+            console.log("yes");
+        } else {
+            console.log("no");
+        }
+    }
 })();
