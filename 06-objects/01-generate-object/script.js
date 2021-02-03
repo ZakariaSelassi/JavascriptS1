@@ -2,5 +2,20 @@
 
 
 (() => {
+
+    let person = {
+        firstname: "Zakaria",
+        lastname: "Selassi",
+        age: 23,
+        city: "Charleroi",
+        country: "Belgium"
+    };
+
     // your code here
+    document.getElementById("run").addEventListener("click", () => myFunction());
+
+    function myFunction() {
+
+        console.table(person);
+    }
 })();

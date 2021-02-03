@@ -88,6 +88,5 @@
                 console.log(element.email);
             }
         });
-
     }
 })();
