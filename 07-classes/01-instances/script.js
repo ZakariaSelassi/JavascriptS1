@@ -9,4 +9,14 @@
         }
     }
     // your code here
+    document.getElementById("run").addEventListener("click", () => myFunction());
+
+    function myFunction() {
+        let myCat1 = new Cat("Skitty", 9);
+        let myCat2 = new Cat("Pixel", 6);
+
+        console.log(myCat1.name + " " + myCat1.age + " years");
+        console.log(myCat2.name + " " + myCat2.age + " years");
+    }
+
 })();
