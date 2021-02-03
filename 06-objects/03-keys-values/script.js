@@ -11,4 +11,14 @@
         status: "married",
     };
     // your code here
+    document.getElementById("run").addEventListener("click", () => myFunction());
+
+    function myFunction() {
+
+        let array = [];
+        array = person;
+        console.table(array);
+
+        console.table(Object.keys(person));
+    }
 })();
