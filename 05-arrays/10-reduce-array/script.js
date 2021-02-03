@@ -85,17 +85,25 @@
     document.getElementById("run").addEventListener("click", () => MyArray());
 
     function MyArray() {
-        function MyArray() {
-            let sum = 0;
-            people.forEach(element => {
-                console.log(element.age);
-                sum += element.age;
+        /*let sum = 0;
+        people.forEach(element => {
+            console.log(element.age);
+            sum += element.age;
 
-            });
-            console.log("somme : " + sum);
+        });
+        console.log("somme : " + sum);*/
 
-        }
+        /*let sum = people.reduce((accumulator, item) => {
+
+
+                return accumulator + item.age;
+            },
+            0);
+        console.log(sum);*/
+        let reducer = (acc, item) => acc + item.age;
+        console.log(people.reduce(reducer, 0));
     }
+
 
 
 })();
