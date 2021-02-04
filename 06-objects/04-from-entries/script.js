@@ -9,15 +9,14 @@
     /**Lorsque l'on clique sur le bouton, on affiche dans la console les clés et les valeurs d'un objet créé à l'aide des tableaux . */
     function myFunction() {
 
-        let array = values.entries(values, keys);
-        let array2 = keys.entries(keys, values);
-        for (let value of array) {
-            console.table(value);
-        }
-        for (let value of array2) {
-            console.table(value);
-        }
+        const myMap = new Map();
+        for (let i = 0; i < keys.length; i++) {
+            myMap.set(keys[i], values[i]);
 
+        }
+        console.log(myMap);
+        let myObject = Object.fromEntries(myMap);
+        console.log(myObject);
     }
 
 
