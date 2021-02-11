@@ -3,6 +3,8 @@
 
 (() => {
 
-    // your code here
+    $(function() {
+        $('.tlt').textillate();
+    })
 
 })();

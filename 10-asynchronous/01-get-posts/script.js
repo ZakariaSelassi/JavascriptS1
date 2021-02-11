@@ -3,4 +3,9 @@
 
 (() => {
     // your code here
+    const req = new XMLHttpRequest();
+
+    if ()
+        req.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
+    req.send(null);
 })();

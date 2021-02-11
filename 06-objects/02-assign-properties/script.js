@@ -27,6 +27,7 @@
 
         computers.forEach(element => {
             Object.assign(element, defaultProps);
+
         });
         console.table(computers);
 

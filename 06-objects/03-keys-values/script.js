@@ -18,7 +18,6 @@
         let array = [];
         array = person;
         console.table(array);
-
         console.table(Object.keys(person));
     }
 })();
