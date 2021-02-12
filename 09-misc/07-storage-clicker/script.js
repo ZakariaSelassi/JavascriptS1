@@ -2,7 +2,16 @@
 
 
 (() => {
+    let targetValue = document.getElementById("target");
+    let cpt = localStorage.getItem("compteur");
 
     // your code here
+    document.getElementById("increment").addEventListener("click", () => {
+        cpt++;
+        localStorage.setItem("compteur", cpt);
+        targetValue.innerHTML = cpt;
 
+
+
+    });
 })();
