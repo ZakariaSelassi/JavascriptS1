@@ -18,36 +18,20 @@
     (() => {
 
         // your code here
-        let targetValue = document.getElementById("target");
-        let btn1 = document.getElementById("part-one");
-        let btn2 = document.getElementById("part-two");
-        let btn3 = document.getElementById("part-three");
-        let btn4 = document.getElementById("part-four");
-        let rm = "460",
-            rm2 = "00",
-            rm3 = "00",
-            rm4 = "00";
-        document.getElementById("part-one").addEventListener("click", () => myfunction());
-        document.getElementById("part-two").addEventListener("click", () => myfunction2());
-        document.getElementById("part-three").addEventListener("click", () => myfunction3());
-        document.getElementById("part-four").addEventListener("click", () => myfunction4());
-
-        function myfunction() {
-            rm = Math.floor(Math.random() * (490 - 460)) + 460;
-            btn1.innerHTML = rm;
-
-            targetValue.innerHTML = rm + "" + rm2 + "" + btn3 + "" + btn4;
-        }
-
-        function myfunction2() {
-            rm2 = Math.floor(Math.random() * (90 - 0)) + 0;
-            btn1.innerHTML = rm2;
-
-            targetValue.innerHTML = rm + "" + rm2 + "" + btn3 + "" + btn4;
-        }
 
 
+        let min = document.querySelector("input").dataset.min;
+        let max = document.querySelector("input").dataset.max;
 
+
+        document.getElementById("fix-part-one").addEventListener("click", () => {
+            let n = Math.floor(Math.random() * (max - min)) + min;
+            let n2 = Math.floor(Math.random() * (460 - 490)) + 490;
+            console.log(n2);
+            console.log(n);
+            //let targ = document.getElementById("part-one").value = n;
+            //console.log(targ.value);
+        });
 
     })();
 })();
