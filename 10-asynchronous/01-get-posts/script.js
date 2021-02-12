@@ -3,9 +3,23 @@
 
 (() => {
     // your code here
-    const req = new XMLHttpRequest();
+    const article = [];
 
-    if ()
-        req.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
-    req.send(null);
+    document.getElementById('run').addEventListener("click", () => {
+        window.lib.getPosts((err, art) => {
+            setTimeout(() => {
+                err = "Error : something fucked up !";
+                if (!err) {
+                    console.log(err);
+                }
+                article.push(art);
+                console.table(art);
+
+            }, 1000);
+        });
+
+
+    });
+
+
 })();

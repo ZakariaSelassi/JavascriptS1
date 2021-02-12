@@ -16,7 +16,7 @@
         let nb = Math.floor(Math.random() * (1000 - 1)) + 1;
         console.log(nb);
         if (cpt < stringT.length) {
-            document.getElementById("target").innerHTML += stringT.charAt(cpt); // chartAt : a chaque fois qu'un lettre est parcourur renvoie une nouvelle chaine containant le caractere
+            document.getElementById("target").innerHTML += stringT.charAt(cpt); // chartAt : a chaque fois qu'un lettre est parcourur renvoie une nouvelle chaine containant tout les²²²²²²²²²²²²²²²²²²²²²
             cpt++;
             setTimeout(typeWriter, nb);
         }

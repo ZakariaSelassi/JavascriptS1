@@ -17,16 +17,6 @@
 
     document.querySelectorAll("button").forEach(btn => {
         btn.addEventListener("click", () => {
-            console.log(btn);
-            let min = btn.dataset.min;
-            let max = btn.dataset.max;
-
-            if (min < max) {
-                btn.innerHTML = min;
-                min++;
-            }
-
-
 
         });
 

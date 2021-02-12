@@ -3,8 +3,16 @@
 
 (() => {
 
-    $(function() {
-        $('.tlt').textillate();
-    })
+    // your code here
+    let text = document.getElementById('target');
+    let stringT = text.textContent;
+    console.log(stringT);
+    let cpt = 0;
+
+
+    for (let i = 0; i < stringT.length; i++) {
+        console.log(stringT);
+    }
+
 
 })();
