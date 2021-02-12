@@ -3,11 +3,12 @@
 
 (() => {
     // your code here
-    const article = [];
+
 
     document.getElementById('run').addEventListener("click", () => {
         window.lib.getPosts((err, art) => {
             setTimeout(() => {
+                const article = [];
                 err = "Error : something fucked up !";
                 if (!err) {
                     console.log(err);
